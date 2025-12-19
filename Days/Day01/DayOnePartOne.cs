@@ -1,4 +1,3 @@
-using System;
 using AdventOfCode2025.Days.Day01;
 using AdventOfCode2025.Interfaces;
 
