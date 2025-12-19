@@ -10,12 +10,17 @@ namespace AdventOfCode2025.Days
         {
             string[] input = ReadInput();
             int numberOfTimesAtZero = 0;
+            HashSet<string> validDirections = new HashSet<string> { "L", "R" };
             Dial dial = new Dial(50);
 
             foreach (string line in input)
             {
                 string direction = line.Substring(0, 1);
-                int steps = int.Parse(line.Substring(1));
+
+                if (!int.TryParse(line.Substring(1), out int steps) || !validDirections.Contains(direction))
+                {
+                    throw new ArgumentException($"{line} is not a valid argument.");
+                }
 
                 if (direction.Equals("L"))
                 {
