@@ -1,11 +1,10 @@
-using AdventOfCode2025.Days.Day01;
-using AdventOfCode2025.Interfaces;
+using AdventOfCode2025.Abstraction;
 
 namespace AdventOfCode2025.Days
 {
-    internal class DayOnePartOne : IDaySolution
+    internal class DayOnePartOne : DaySolutionGeneric
     {
-        public string SolveProblem() 
+        protected override string SolveProblem() 
         {
             string[] input = ReadInput();
             int numberOfTimesAtZero = 0;
@@ -37,14 +36,10 @@ namespace AdventOfCode2025.Days
 
             return numberOfTimesAtZero.ToString();
         }
-        private string[] ReadInput()
-        {
-            return File.ReadAllLines("Days/Day01/DayOneInput.txt");
-        }
 
-        public string GenerateOutput()
+        protected override string GetInputFilePath()
         {
-            return SolveProblem();
+            return "Days/Day01/Input.txt";
         }
     }
 }

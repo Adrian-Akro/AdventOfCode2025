@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AdventOfCode2025.Days.Day01
+namespace AdventOfCode2025.Days
 {
     internal class Dial
     {

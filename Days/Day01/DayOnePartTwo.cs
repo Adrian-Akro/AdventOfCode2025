@@ -1,13 +1,11 @@
-﻿using AdventOfCode2025.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using AdventOfCode2025.Abstraction;
+using AdventOfCode2025.Interfaces;
 
-namespace AdventOfCode2025.Days.Day01
+namespace AdventOfCode2025.Days
 {
-    internal class DayOnePartTwo : IDaySolution
+    internal class DayOnePartTwo : DaySolutionGeneric
     {
-        public string SolveProblem()
+        protected override string SolveProblem()
         {
             string[] input = ReadInput();
             int numberOfTimesCrossingZero = 0;
@@ -42,14 +40,11 @@ namespace AdventOfCode2025.Days.Day01
 
             return numberOfTimesCrossingZero.ToString();
         }
-        private string[] ReadInput()
-        {
-            return File.ReadAllLines("Days/Day01/DayOneInput.txt");
-        }
 
-        public string GenerateOutput()
+
+        protected override string GetInputFilePath()
         {
-            return SolveProblem();
+            return "Days/Day01/Input.txt";
         }
     }
 }

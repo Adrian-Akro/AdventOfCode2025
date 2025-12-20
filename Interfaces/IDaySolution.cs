@@ -1,6 +1,6 @@
 namespace AdventOfCode2025.Interfaces
 {
-    public interface IDaySolution
+    internal interface IDaySolution
     {
         string GenerateOutput();
     }
