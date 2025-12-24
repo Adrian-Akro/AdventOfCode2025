@@ -8,7 +8,9 @@ List<IDaySolution> previousDaysSolutions = new List<IDaySolution>()
     new DayOnePartOne(),
     new DayOnePartTwo(),
     new DayTwoPartOne(),
-    new DayTwoPartTwo()
+    new DayTwoPartTwo(),
+    new DayThreePartOne(),
+    new DayThreePartTwo()
 };
 
 for(int i = 1; i <= previousDaysSolutions.Count; i++)
@@ -27,7 +29,7 @@ for(int i = 1; i <= previousDaysSolutions.Count; i++)
 }
 
 Console.WriteLine("");
-IDaySolution currentDaySolution = new DayTwoPartTwo();
+IDaySolution currentDaySolution = new DayThreePartTwo();
 Console.WriteLine("Generating output for the current day...");
 Stopwatch watch = System.Diagnostics.Stopwatch.StartNew();
 

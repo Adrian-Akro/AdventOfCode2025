@@ -1,5 +1,4 @@
 ﻿using AdventOfCode2025.Abstraction;
-using AdventOfCode2025.Interfaces;
 
 namespace AdventOfCode2025.Days
 {
