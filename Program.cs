@@ -1,4 +1,5 @@
 ﻿using AdventOfCode2025.Days;
+using AdventOfCode2025.Days.Day04;
 using AdventOfCode2025.Interfaces;
 using System.Diagnostics;
 
@@ -10,7 +11,8 @@ List<IDaySolution> previousDaysSolutions = new List<IDaySolution>()
     new DayTwoPartOne(),
     new DayTwoPartTwo(),
     new DayThreePartOne(),
-    new DayThreePartTwo()
+    new DayThreePartTwo(),
+    new DayFourPartOne()
 };
 
 for(int i = 1; i <= previousDaysSolutions.Count; i++)
@@ -29,7 +31,7 @@ for(int i = 1; i <= previousDaysSolutions.Count; i++)
 }
 
 Console.WriteLine("");
-IDaySolution currentDaySolution = new DayThreePartTwo();
+IDaySolution currentDaySolution = new DayFourPartTwo();
 Console.WriteLine("Generating output for the current day...");
 Stopwatch watch = System.Diagnostics.Stopwatch.StartNew();
 
